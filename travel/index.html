@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,400;0,700;1,400;1,700&family=Magra:wght@700&family=Red+Hat+Text:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <title>Travel</title>
+    <link rel="icon" type="image/x-icon" href="./favicon.png">
+    <script src="./index.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="wrapper">
+            <a class="logo" href="#"><img src="./logo.svg" alt="logo" width="30" height="30">
+                <p>Travel Portal</p>
+            </a>
+            <nav class="navigation">
+                <ul class="links-list">
+                    <li><a id="one" class="link" href="#howitworks">How It Works</a></li>
+                    <li><a id="two" class="link" href="#trip">Plan Your Trip</a></li>
+                    <li><a id="three" class="link" href="#destination">Destinations</a></li>
+                    <li><a id="four" class="link" href="#travelstories">Travel Stories</a></li>
+                </ul>
+            </nav>
+            <form class="login" action="#">
+                <button id="loginbutton">Login</button>
+            </form>
+        </div>
+    </header>
+
+    <main>
+        <section id="howitworks" class="preview">
+            <div class="wrapperpreview">
+                <h1>Explore the beauty of the World</h1>
+                <p>Receive personalized recommendations for countries, hotels, activities and more</p>
+                <form class="search">
+                    <input name="whatwouldyoulike" placeholder="What would you like to do?" class="form-control"
+                        type="text">
+                    <button id="startplanning">Start Planning</button>
+                </form>
+            </div>
+        </section>
+        <section class="steps">
+            <h2 id="trip">3 STEPS TO THE PERFECT TRIP</h2>
+            <div class="items">
+                <div>
+                    <div class="orangesquare"></div>
+                    <img class="icon" src="./bike.svg" alt="bike" width="50" height="45">
+                    <p>Tell us what you want to do</p>
+                </div>
+                <div>
+                    <div class="orangesquare"></div>
+                    <img class="icon" src="./calendar.svg" alt="calendar" width="52" height="52">
+                    <p>Share us preferable dates</p>
+                </div>
+                <div>
+                    <div class="orangesquare"></div>
+                    <img class="icon" src="./plane.svg" alt="plane" width="60" height="45">
+                    <p id="leftsidea">We will give you recommendations</p>
+                </div>
+            </div>
+        </section>
+        <section class="destinations">
+            <h2 id="destination">POPULAR DESTINATIONS</h2>
+            <div class="slider_wrapper">
+                <div class="slider-container">
+                    <div class="slider-track">
+
+                        <div class="slides">
+                            <img src="./Spain.png" alt="Spain">
+                            <div class="slidetext">SPAIN</div>
+                        </div>
+                        <div class="slides">
+                            <img src="./Japan.png" alt="Japan">
+                            <div class="slidetext">JAPAN</div>
+                        </div>
+                        <div class="slides">
+                            <img src="./USA.png" alt="USA">
+                            <div class="slidetext">USA</div>
+                        </div>
+                        <div class="slides">
+                            <img src="./Spain.png" alt="Spain">
+                            <div class="slidetext">SPAIN</div>
+                        </div>
+                        <div class="slides">
+                            <img src="./Japan.png" alt="Japan">
+                            <div class="slidetext">JAPAN</div>
+                        </div>
+                        <div class="slides">
+                            <img src="./USA.png" alt="USA">
+                            <div class="slidetext">USA</div>
+                        </div>
+                        <div class="slides">
+                            <img src="./Spain.png" alt="Spain">
+                            <div class="slidetext">SPAIN</div>
+                        </div>
+                        <div class="slides">
+                            <img src="./Japan.png" alt="Japan">
+                            <div class="slidetext">JAPAN</div>
+                        </div>
+                        <div class="slides">
+                            <img src="./USA.png" alt="USA">
+                            <div class="slidetext">USA</div>
+                        </div>
+                        <div class="slides">
+                            <img src="./Spain.png" alt="Spain">
+                            <div class="slidetext">SPAIN</div>
+                        </div>
+                        <div class="slides">
+                            <img src="./Japan.png" alt="Japan">
+                            <div class="slidetext">JAPAN</div>
+                        </div>
+                        <div class="slides">
+                            <img src="./USA.png" alt="USA">
+                            <div class="slidetext">USA</div>
+                        </div>
+                        <div class="slides">
+                            <img src="./Spain.png" alt="Spain">
+                            <div class="slidetext">SPAIN</div>
+                        </div>
+                        <div class="slides">
+                            <img src="./Japan.png" alt="Japan">
+                            <div class="slidetext">JAPAN</div>
+                        </div>
+                        <div class="slides">
+                            <img src="./USA.png" alt="USA">
+                            <div class="slidetext">USA</div>
+                        </div>
+                    </div>
+                </div>
+                <a class="btn-prev">&#10094;</a>
+                <a class="btn-next">&#10095;</a>
+                <!-- The dots/circles -->
+                <div class="dots">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+            </div>
+            <form class="find" action="#">
+                <img src="./Vector.svg" alt="arrow-right" width="35" style="height: auto">
+                <button id="findmore">
+                    <span>Find&nbsp;More</span>
+                </button>
+            </form>
+        </section>
+        <section class="stories">
+            <div class="whitebox">
+                <h2 id="travelstories">TRAVEL STORIES</h2>
+                <div class="storieslist">
+                    <ul>
+                        <li><img src="./Image_1.png" alt="img1" width="400" height="250">
+                            <div class="textbox">
+                                <p class="storyheader">10 Photos of Attractive Thailand</p>
+                                <p class="stroy">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                    tempor incididunt
+                                    ut
+                                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                    ullamco
+                                    laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                                    reprehenderit
+                                    in
+                                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                                    cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                                    laborum.Lorem
+                                    ipsum dolor sit amet, consectetur adipiscing elit... <u><b>Read More</b></u></p>
+                            </div>
+                        </li>
+                        <li><img src="./Image_2.png" alt="img2" width="400" height="250">
+                            <div class="textbox">
+                                <p class="storyheader">Canyonlands National Park, Utah</p>
+                                <p class="stroy">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                    tempor incididunt
+                                    ut
+                                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                    ullamco
+                                    laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                                    reprehenderit
+                                    in
+                                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                                    cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                                    laborum.Lorem
+                                    ipsum dolor sit amet, consectetur adipiscing elit... <u><b>Read More</b></u></p>
+                            </div>
+                        </li>
+                        <li><img src="./Image_3.png" alt="img3" width="400" height="250">
+                            <div class="textbox">
+                                <p class="storyheader">I left my heart in the Mountains!</p>
+                                <p class="stroy">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                    tempor incididunt
+                                    ut
+                                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                    ullamco
+                                    laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                                    reprehenderit
+                                    in
+                                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                                    cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                                    laborum.Lorem
+                                    ipsum dolor sit amet, consectetur adipiscing elit... <u><b>Read More</b></u></p>
+                            </div>
+                        </li>
+                        <li><img src="./Image_4.png" alt="img4" width="400" height="250">
+                            <div class="textbox">
+                                <p class="storyheader">The Longest journey in my life!</p>
+                                <p class="stroy">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                    tempor incididunt
+                                    ut
+                                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                    ullamco
+                                    laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                                    reprehenderit
+                                    in
+                                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                                    cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                                    laborum.Lorem
+                                    ipsum dolor sit amet, consectetur adipiscing elit... <u><b>Read More</b></u></p>
+                            </div>
+                        </li>
+                        <li>
+                            <form class="more" action="#">
+                                <img src="./Vector.svg" alt="arrow-right" width="35" style="height: auto">
+                                <button id="more2">
+                                    <span>See More</span>
+                                </button>
+                            </form>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer_item">
+            <div class="A">
+                <ul class="leftlinks">
+                    <li>
+                        <a class="rsschoollink" href="https://rs.school/js/">
+                            <img src="./rs_school.svg" alt="Rsschool Icon" width="50" style="height: auto">
+                        </a>
+                    </li>
+                    <li> <a class="githublink" id="link" href="https://github.com/geniusx1990">
+                            <img class="github-icon" src="./logo-github.svg" alt="Github Icon" width="31" height="31">
+                        </a></li>
+                </ul>
+            </div>
+            <div class="B">
+                <p>All Rights Reserved © Travel Portal</p>
+            </div>
+            <div class="C">
+                <ul class="rightlinks">
+                    <li>
+                        <a class="instagram" href="https://instagram.com">
+                            <img src="./instagram_1.svg" alt="Rsschool Icon" width="31" height="31">
+                        </a>
+                    </li>
+                    <li><a class="youtube" href="https://youtube.com">
+                            <div class="youtubeimage">
+                                <img src="./youtube_1.svg" alt="Youtube" width="28" style="height: auto">
+                                <img class="you2" src="./youtube_2.svg" alt="Youtube" width="7" style="height: auto">
+                            </div>
+                        </a>
+                    </li>
+                    <li><a class="twitter" href="https://twitter.com">
+                            <img src="./twitterrr.svg" alt="Twitter" width="31" height="31">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
