@@ -6,7 +6,10 @@
     margin-right: auto;
 }
 
+html {
+    scroll-behavior: smooth;
 
+}
 
 body {
 
@@ -102,11 +105,12 @@ body {
     font-size: 16px;
     color: #FFFFFF;
     text-decoration: none;
+    transition: 0.5s
 }
 
 .link {
     margin-right: 42px;
-
+    transition: 0.5s
 }
 
 .link:last-child {
@@ -464,6 +468,10 @@ input {
 }
 
 
+.stories_picture_mobile {
+    display: none;
+
+}
 
 .stories_picture {
     filter: drop-shadow(0px 4px 4px #0D606F);
@@ -903,7 +911,8 @@ footer {
         padding-right: 0;
         padding-top: 44px;
         z-index: 10;
-        transform: translateX(165px);
+        transform: translateX(100%);
+        transition: .3s all linear;
 
     }
 
@@ -953,6 +962,7 @@ footer {
         left: 8px;
         position: absolute;
         z-index: 12;
+
     }
 
     .header-nav-close-line {
@@ -978,7 +988,7 @@ footer {
 
     .navigation_active {
         transform: translateX(0);
-        transition: .2s all linear;
+        transition: .3s all linear;
 
     }
 
@@ -991,7 +1001,18 @@ footer {
     body {
         width: 390px;
     }
+    .links-list {
+        display: flex;
+        list-style-type: none;
+        flex-wrap: wrap;
+        padding-right: 15px;
+    
+    }
+    .link {
+        padding-bottom: 10px;
+    }
 
+    
     .header {
         position: relative;
         height: 90px;
@@ -1081,19 +1102,22 @@ footer {
 
     }
 
+
     .items {
-        width: 100%;
-        position: relative;
+        max-width: 390px;
         display: flex;
-        padding: 20px 15px 20px 15px;
+        padding-top: 20px;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 64px;
         flex-wrap: nowrap;
+        justify-content: space-between;
 
     }
 
     .itemstep {
         display: flex;
         flex-direction: column;
-        width: max-content;
         align-items: center;
 
     }
@@ -1118,9 +1142,21 @@ footer {
     }
 
     .contentText {
-        margin-top: 19px;
+        position: absolute;
         font-size: 10px;
         line-height: 12px;
+        margin-top: 90px;
+        display: flex;
+    }
+
+    #leftsidea2 {
+        text-align: left;
+        margin-left: 15px;
+    }
+
+    #leftsidea {
+        text-align: right;
+        margin-right: 15px;
     }
 
     .destinations h2 {
@@ -1148,14 +1184,23 @@ footer {
         position: relative;
         margin: auto;
     }
-    .dots_2 {
+
+    .dots_second {
         position: absolute;
-        bottom: 0;
-        margin: 0;
-        padding-left: 156px;
-        padding-bottom: 12px;
+        display: flex;
+        justify-items: center;
+        margin-left: 162px;
+        margin-right: 162px;
+
+        bottom: 12px;
+    }
+
+    #dot_second_center {
+        margin-left: 6px;
+        margin-right: 6px;
 
     }
+
     /* Hide the images by default */
     .mySlides {
         display: none;
@@ -1172,14 +1217,12 @@ footer {
     .next {
         cursor: pointer;
         position: absolute;
-        top: 50%;
         width: auto;
-        margin-top: -22px;
-        padding: 16px;
+        margin-top: 69.98px;
+        padding: 11.27px;
         color: #F2785C;
         opacity: 50%;
-        font-weight: bold;
-        font-size: 18px;
+        font-size: 32px;
         transition: 0.6s ease;
         border-radius: 0 3px 3px 0;
         user-select: none;
@@ -1202,6 +1245,7 @@ footer {
         color: #f2f2f2;
         font-size: 20px;
         padding-bottom: 176px;
+        line-height: 26.46px;
         padding-left: 15px;
         position: absolute;
         bottom: 0px;
@@ -1213,20 +1257,22 @@ footer {
 
 
     /* The dots/bullets/indicators */
-    .dot {
+    .dot_second {
         cursor: pointer;
         height: 8px;
         width: 8px;
-        margin: 0 6px;
+        padding: 0;
         background-color: #F2785C;
+        opacity: 50%;
         border-radius: 50%;
         display: inline-block;
         transition: background-color 0.6s ease;
     }
 
     .active,
-    .dot:hover {
-        background-color: #717171;
+    .dot_second:hover {
+        background-color: #F2785C;
+        opacity: 100%;
     }
 
 
@@ -1259,29 +1305,31 @@ footer {
         gap: 6px;
         padding: 10px, 32px, 10px, 32px;
     }
-    
+
     .find {
         margin-left: 149px;
         margin-top: 10px;
     }
-    
+
     .find img {
         position: absolute;
         margin-left: 12.62px;
         margin-top: 12.19px;
         width: 8.75px;
         height: 5.63px;
-    
+
     }
-    
+
     .destinations {
         height: 289px;
     }
+
     .find span {
         position: absolute;
         margin-top: -7.50px;
         margin-left: -18px;
     }
+
     .stories {
         background: url(./theme_2.jpg);
         background-position-y: 49px;
@@ -1290,11 +1338,13 @@ footer {
         margin-bottom: -65px;
         padding-bottom: 65px;
     }
+
     .whitebox {
         height: 677px;
         max-width: 390px;
         background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7))
     }
+
     .stories h2 {
         margin-left: 136px;
         padding-top: 20px;
@@ -1309,10 +1359,7 @@ footer {
 
 
     .stories_picture {
-        filter: drop-shadow(0px 4px 4px #0D606F);
-        border-radius: 16px;
-        width: 155px;
-        height: 130px;
+        display: none;
     }
 
     .storieslist ul {
@@ -1335,9 +1382,10 @@ footer {
     }
 
     .storyheader {
+        margin-top: 5px;
         font-family: 'Aleo';
         font-style: normal;
-        font-weight: 400;
+        font-weight: 700;
         font-size: 11px;
         line-height: 13.2px;
         color: #0D606F;
@@ -1353,6 +1401,15 @@ footer {
         line-height: 10.8px;
         color: #0D606F;
 
+
+    }
+
+    .stories_picture_mobile {
+        display: block;
+        filter: drop-shadow(0px 4px 4px #0D606F);
+        border-radius: 16px;
+        width: 155px;
+        height: 130px;
 
     }
 
@@ -1387,14 +1444,14 @@ footer {
         gap: 6px;
         padding: 10px, 32px, 10px, 32px;
     }
-    
+
     .more {
         margin-top: -5px;
         margin-left: 134px;
         margin-right: 134px;
         padding-bottom: 40px;
     }
-    
+
     .more img {
         position: absolute;
         margin-left: 12.62px;
@@ -1402,7 +1459,7 @@ footer {
         width: 8.75px;
         height: 5.63px;
     }
-    
+
     .more span {
         position: absolute;
         margin-top: -7.50px;
