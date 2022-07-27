@@ -17,7 +17,7 @@
 </head>
 
 <body>
-   
+
     <header class="header">
         <div class="wrapper">
             <a class="logo" href="#"><img src="./logo.svg" alt="logo" width="30" height="30">
@@ -42,9 +42,46 @@
                 <span class="burger__line burger__line_second"></span>
                 <span class="burger__line burger__line_third"></span>
             </div>
-            <form class="login" action="#">
-                <button id="loginbutton">Login</button>
+            <form class="login">
+                <button type="button" class="login-open-pop-up" id="loginbutton">Login</button>
             </form>
+            <div class="pop-up hidden">
+
+                <div class="pop-up_conent">
+                    <div class="content-pop-up_wrapper">
+                        <p class="pop-up_text">Log in to your account</p>
+                        <button class="sign-via-facebook"><img src="./path14.svg" alt="Facebook icon" width="23"
+                                height="22.86">
+                            <p class="text-Facebook">Sign In with Facebook</p>
+                        </button>
+                        <button class="sign-via-google"><img src="./Google Logo.svg" alt="Facebook icon" width="24"
+                                height="24">
+                            <p class="text-Google">Sign In with Google</p>
+                        </button>
+                        <div class="popup_lines">
+                            <span class="pop-up_line_first"></span>
+                            <p class="text-between-lines">or</p>
+                            <span class="pop-up_line_second"></span>
+                        </div>
+                        <p class="email-text">E-mail</p>
+                        <input name="Email" placeholder="" class="e-mailInput" type="email">
+                        <p class="password-text">Password</p>
+                        <input name="Password" placeholder="" class="PassInput" type="password">
+                        <button class="signInbutton">
+                            <p class="Signtext">Sign In</p>
+                        </button>
+                        <div class="restorepassword-link">
+                            <a href="#">Forgot Your Password?</a>
+                        </div>
+                        <span class="bottom-line"></span>
+                        <div class="register-link">
+                            <a class="register-link-link" href="#">
+                                <p class="text1">Don’t have an account?&nbsp;</p><u class="text2">Register</u>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </header>
 
@@ -149,8 +186,10 @@
                     </div>
 
                 </div>
-                <a class="btn-next">&#10095;</a>
-                <a class="btn-prev">&#10094;</a>
+                <div class="leftandright">
+                    <a class="btn-next">&#10095;</a>
+                    <a class="btn-prev">&#10094;</a>
+                </div>
                 <!-- The dots/circles -->
                 <div class="dots">
                     <span class="dot" onclick="currentSlide(1)"></span>
@@ -330,6 +369,8 @@
         </div>
     </footer>
     <script src="./script.js"></script>
+    <script src="./popupinner.js"></script>
+    <!-- <script src="./pop-up.js"></script> -->
     <script src="./carousel.js"></script>
     <script src="./burger.js"></script>
 </body>
